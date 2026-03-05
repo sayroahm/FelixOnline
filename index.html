@@ -28,11 +28,60 @@
     .toolbar-btn:hover{
       background-color:#c9eaff;
     }
+
+    .dropdown{
+      position:relative;
+    }
+
+    .dropbtn{
+      padding:8px 14px;
+      background:#c9eaff;
+      color:white;
+      border:none;
+      cursor:pointer;
+    }  
+
+    .dropdown:hover{
+      background-color:;
+      padding:8px 14px;
+      border:none;
+      cursor:pointer;
+    }
+    
+    .dropdown-content{
+      display:none;
+      position:absolute;
+      background:#333;
+      min-width:150px;
+    }
+
+    .dropdown-content a{
+      color:white;
+      padding:10px;
+      display:block;
+      text-decoration:none;
+    }
+
+    .dropdown-content a:hover{
+      background:#555;
+    }
+
+    .dropdown:hover .dropdown-content{
+      display:block;
+    }
   </style>
 </head>
 
 <body>
   <div class="toolbar">
+    <div class="dropdown">
+        <button class="dropbtn">Felix</button>
+        <div class="dropdown-content">
+            <a href="#">Option 1</a>
+            <a href="#">Option 2</a>
+            <a href="#">Option 3</a>
+        </div>
+    </div>
     <button class="toolbar-btn">New Case +</button>
   </div>
 </body>
