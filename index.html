@@ -26,7 +26,22 @@
       cursor:pointer;
       font-weight:500;
     }
+    
+    .toolbar-btn-disable{
+      margin-left:20px;
+      padding:6px 8px;
+      background:none;
+      border:none;
+      color:#000;
+      cursor:pointer;
+      font-weight:500;
+      text-decoration: line-through;
+    }
 
+    .toolbar-btn-disable:hover{
+      text-decoration:underline;
+    }
+    
     .toolbar-btn:hover{
       text-decoration:underline;
     }
@@ -90,6 +105,10 @@
         </div>
     </div>
     <button class="toolbar-btn">New Case +</button>
+    <button class="toolbar-btn">Home</button>
+    <button class="toolbar-btn">Dashboard</button>
+    <button class="toolbar-btn-disable">Tip Viewer</button>
+    <button class="toolbar-btn">Unit Manager</button>
   </div>
 </body>
 </html>
